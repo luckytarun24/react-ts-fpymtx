@@ -3,7 +3,7 @@ import * as React from 'react';
 const WithoutUseMemo = () => {
   const [value, changeValue] = React.useState(100);
   const [theme, changeTheme] = React.useState('white');
-  // Here if i change theme component will render and recalculated for same value.So it cost more.
+  // Here if i change theme of component it will re-render and re-calculated for same value.So it cost more.
   const valuePercentage = (() => {
     console.log('i am called!');
     return value * 0.1;
